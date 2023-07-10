@@ -1,6 +1,5 @@
 // Importações
 import { salvar, pesquisar, limpar } from "./controlerNutribot.js";
-import { Aluno } from "./modelNutribot.js";
 
 // Botão Cadastrar
 let btCadastrar = document.getElementById("btCadastrar")
@@ -14,7 +13,7 @@ btPesquisar.addEventListener("click", () => {
     let nome = document.getElementById("nome").value  
     let pessoa = pesquisar(nome)
     if (pessoa != null){
-        prompt("Essa pessoa já está devidamente cadastrada")
+        alert("Essa pessoa já está devidamente cadastrada")
         limpar()
     } else { 
         alert("Pessoa não encontrada")

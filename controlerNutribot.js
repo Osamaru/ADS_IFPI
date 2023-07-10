@@ -89,6 +89,7 @@ export function salvar() {
     }
 
 // ======================================================================================
+
     // Cria um Novo Aluno
     let novoAluno = new Aluno()
     // Recebe o Nome
@@ -116,10 +117,8 @@ export function salvar() {
     cadastrar(novoAluno)    
     console.log(novoAluno)
 
-    // Mostra as informações no Console
-    console.log("Sua Taxa Metabólica Basal é " + tmb + " .")
-    console.log("Seu corpo gasta, no total, " + gastoTotal + " calorias.")
-    console.log("Dessa forma, para atingir seu objetivo, você deve ingerir " + escolhaObj + " calorias.")
+    // Mostra as informações na tela
+    alert("Sua Taxa Metabólica Basal é de " + Math.round(tmb) + " calorias. \nSeu corpo, com base no seu nível de atividade, gasta no total " + Math.round(gastoTotal) + " calorias por dia.\nDessa forma, para atingir seu objetivo, você deve ingerir " + Math.round(escolhaObj) + " calorias diariamente.")
 
     // Limpa o formulário
     limpar()
