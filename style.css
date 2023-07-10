@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+
+}
+body {
+    background-image: url("backfrutas.jpeg");
+    background-color: rgba(255,255,255, 0.5) ;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#form {
+    font-family: cursive;
+    border: 0px solid #ffd160;
+    padding: 25px;
+    background:linear-gradient(180deg , #ffd160 , #d49800);
+    border-radius: 40px;
+    margin-top: 120px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 0px 20px #a47800;
+}
+
+#form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+#nome, #idade, #altura, #peso {
+    outline: unset ;
+    padding: 10px;
+    width: 400px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 3px;
+    transition: ease-in-out 0.2s;
+    background-color: rgb(236, 234, 234);
+
+}
+
+select {
+    outline: unset;
+    width: 422px ;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.botao {
+    width: 90px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    margin-top: 10px; 
+    border-radius: 5px;
+    border: none
+}
+
+.botao:hover {
+    background-color: aquamarine;
+}
+
+#botaodiv {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select:hover, option:hover{
+    background-color: white;
+    box-shadow: 3px 3px 1px rgb(222, 189, 0);
+}
+select, option{
+    transition: ease-in-out 0.2s;
+    background-color: rgb(236, 234, 234);
+}
+#nome:hover, #idade:hover, #altura:hover, #peso:hover {
+    background-color: white;
+    box-shadow: 3px 3px 1px rgb(222, 189, 0);
+}
+
+
